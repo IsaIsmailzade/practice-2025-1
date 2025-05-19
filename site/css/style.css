@@ -1,0 +1,30 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.media-placeholder {
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  font-weight: bold;
+  text-align: center;
+  min-height: 200px;
+  overflow: hidden; /* Убедимся, что содержимое не выходит за пределы */
+}
+
+.media-placeholder img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Изображение масштабируется, сохраняя пропорции */
+}
